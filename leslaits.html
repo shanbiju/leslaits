@@ -1,0 +1,592 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Les Laits</title>
+    <link rel = "icon" href =""type = "image/x-icon">
+
+<body>
+   
+
+<!-- Include Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+
+
+
+
+<script>
+    // Close the dropdown when clicking outside the navbar
+    $(document).ready(function() {
+        $(document).click(function(event) {
+            if (!$(event.target).closest('#ftco-navbar').length) {
+                $('#ftco-nav').collapse('hide');
+            }
+        });
+
+        // Add a class to the body when the navbar is expanded
+        $('#ftco-nav').on('show.bs.collapse', function () {
+            $('body').addClass('navbar-expanded');
+        });
+
+        // Remove the class when the navbar is collapsed
+        $('#ftco-nav').on('hide.bs.collapse', function () {
+            $('body').removeClass('navbar-expanded');
+        });
+    });
+</script>
+
+<!-- navigation starts -->
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light fixed-top" id="ftco-navbar">
+    <div class="container">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#"></a>
+
+        <!-- Toggler Button for Mobile -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span> <!-- This is the hamburger icon -->
+        </button>
+
+        <!-- Collapsible Navbar Links -->
+        <div class="collapse navbar-collapse" id="ftco-nav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li class="nav-item"><a href="#menu" class="nav-link">Menu</a></li>
+                <li class="nav-item"><a href="#testimonial" class="nav-link">Testimonials</a></li>
+                <li class="nav-item cta"><a href="#order" class="nav-link">Order Now</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- navigation ends -->
+
+<style>
+    /* Ensure the navbar is fixed at the top */
+.navbar.fixed-top {
+    z-index: 1030; /* Ensure it's above other elements */
+}
+
+/* Adjust the carousel position when the navbar is expanded */
+body.navbar-expanded {
+    padding-top: 200px; /* Adjust this value based on your navbar height */
+}
+
+/* Adjust the carousel position when the navbar is expanded */
+.navbar-expanded .carousel {
+    margin-top: 200px; /* Adjust this value based on your navbar height */
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- slider  section start -->
+    <section class="home-slider owl-carousel js-fullheight">
+        <div class="slider-item js-fullheight" style="background-image: url(images/bg_1.jpg);">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row slider-text js-fullheight justify-content-center align-items-center"
+                    data-scrollax-parent="true">
+
+                    <div class="col-md-12 col-sm-12 text-center ftco-animate">
+                        <span class="subheading">Lahza Makers & Co</span>
+                        <h1 class="mb-4">"Create a moment with us"</h1>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="slider-item js-fullheight" style="background-image: url(images/bg_1.jpg);">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row slider-text js-fullheight justify-content-center align-items-center"
+                    data-scrollax-parent="true">
+
+                    <div class="col-md-12 col-sm-12 text-center ftco-animate">
+                        <span class="subheading">Les Laits</span>
+                        <h1 class="mb-4">Desert Catering Artisanal Cake | Bakes </h1>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="slider-item js-fullheight" style="background-image: url(images/bg_2.jpg);">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row slider-text js-fullheight justify-content-center align-items-center"
+                    data-scrollax-parent="true">
+
+                    <div class="col-md-12 col-sm-12 text-center ftco-animate">
+                        <span class="subheading">An Lahza Affair</span>
+                        <h1 class="mb-4">Decorations</h1>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="slider-item js-fullheight" style="background-image: url(images/bg_2.jpg);">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row slider-text js-fullheight justify-content-center align-items-center"
+                    data-scrollax-parent="true">
+
+                    <div class="col-md-12 col-sm-12 text-center ftco-animate">
+                        <span class="subheading">Lahza</span>
+                        <h1 class="mb-4">Personalised Gifting | Flower Shop</h1>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+       
+    </section>
+
+
+    <style>
+        .owl-carousel.home-slider .slider-item .slider-text h1 {
+    font-size: 35px;
+    color: #ffffff;
+    font-weight: 600;
+    margin-bottom: 0;
+    line-height: 1.5;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-family: "Poppins", cursive;
+}
+    </style>
+    <!-- slider  section end  -->
+
+<!-- About Us Section Starts -->
+<section class="ftco-wrap-about" id="about">
+    <div class="intro">
+        <div class="container">
+            <div class="heading-section ftco-animate mb-5 text-center">
+                <span class="subheading">Our</span>
+                <h2 class="mb-4">Franchises</h2>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="row">
+                        <div class="col-xl-4 col-md-6 col-sm-12 intro_col">
+                            <div class="intro_image position-relative">
+                                <img src="images/intro_1.jpg" alt="Cake">
+                                <div class="btn-overlay">
+                                    <a href="#cakes" class="btn btn-primary">Les Laits</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6 col-sm-12 intro_col">
+                            <div class="intro_image position-relative">
+                                <img src="images/intro_2.jpg" alt="Decorations">
+                                <div class="btn-overlay">
+                                    <a href="#decorations" class="btn btn-primary">Lahza</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6 col-sm-12 intro_col">
+                            <div class="intro_image position-relative">
+                                <img src="images/intro_2.jpg" alt="Decorations">
+                                <div class="btn-overlay">
+                                    <a href="#decorations" class="btn btn-primary">An Lahza Affarir</a>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CSS to style the buttons and images -->
+<style>
+    .intro_image {
+        position: relative;
+        text-align: center;
+        overflow: hidden;
+        margin-bottom: 15px; /* Added space between images */
+    }
+
+    .intro_image img {
+        width: 100%;
+        height: 250px; /* Making the image rectangular */
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .btn-overlay {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        text-align: center;
+    }
+
+    .btn-overlay .btn {
+        background-color: rgb(200, 169, 126); 
+        color: white;
+        padding: 6px 20px;
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: 14px;
+        text-transform: uppercase;
+        border: none;
+        transition: background-color 0.3s;
+    }
+
+    .btn-overlay .btn:hover {
+        background-color: rgb(180, 140, 100); /* Slightly darker brown */
+    }
+
+    .btn-overlay .btn:focus, 
+    .btn-overlay .btn:active {
+        background-color: rgb(200, 169, 126) !important; /* No red effect */
+        outline: none;
+        box-shadow: none;
+    }
+
+    /* Ensuring spacing and alignment on small screens */
+    @media (max-width: 768px) {
+        .intro_col {
+            padding: 0 10px; /* Adds spacing between columns */
+        }
+    }
+</style>
+
+
+
+
+
+    <!-- about us section ends  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- menu section starts -->
+    <section class="ftco-section" id="menu">
+        <div class="container-fluid px-4">
+            <div class="row justify-content-center mb-5 pb-2">
+                <div class="col-md-7 text-center heading-section ftco-animate">
+                    <span class="subheading">Specialities</span>
+                    <h2 class="mb-4">Our Menu</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 col-lg-4 menu-wrap">
+                    <div class="heading-menu text-center ftco-animate">
+                        <h3>Cakes</h3>
+                    </div>
+                    <div class="menus d-flex ftco-animate">
+                        <div class="menu-img img" style="background-image: url(images/menu1.jpg);"></div>
+                        <div class="text">
+                            <div class="d-flex">
+                                <div class="one-half">
+                                    <h3>Strawberry</h3>
+                                </div>
+                                <div class="one-forth">
+                                    <span class="price">₹400</span>
+                                </div>
+                            </div>
+                            <p><span>Strawberry</span>, <span>Chocolate</span>, <span>Berry</span>, <span>Cream</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="menus d-flex ftco-animate">
+                        <div class="menu-img img" style="background-image: url(images/menu2.jpg);"></div>
+                        <div class="text">
+                            <div class="d-flex">
+                                <div class="one-half">
+                                    <h3>Chocolate Cake</h3>
+                                </div>
+                                <div class="one-forth">
+                                    <span class="price">₹399</span>
+                                </div>
+                            </div>
+                            <p><span>Strawberry</span>, <span>Chocolate</span>, <span>Berry</span>, <span>Cream</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="menus d-flex ftco-animate">
+                        <div class="menu-img img" style="background-image: url(images/menu3.jpg);"></div>
+                        <div class="text">
+                            <div class="d-flex">
+                                <div class="one-half">
+                                    <h3>Red Valvet</h3>
+                                </div>
+                                <div class="one-forth">
+                                    <span class="price">₹500</span>
+                                </div>
+                            </div>
+                            <p><span>Strawberry</span>, <span>Chocolate</span>, <span>Berry</span>, <span>Cream</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 menu-wrap">
+                    <div class="heading-menu text-center ftco-animate">
+                        <h3>Wedding Cake</h3>
+                    </div>
+                    <div class="menus d-flex ftco-animate">
+                        <div class="menu-img img" style="background-image: url(images/menu4.jpg);"></div>
+                        <div class="text">
+                            <div class="d-flex">
+                                <div class="one-half">
+                                    <h3>Pineapple</h3>
+                                </div>
+                                <div class="one-forth">
+                                    <span class="price">₹450</span>
+                                </div>
+                            </div>
+                            <p><span>Strawberry</span>, <span>Chocolate</span>, <span>Berry</span>, <span>Cream</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="menus d-flex ftco-animate">
+                        <div class="menu-img img" style="background-image: url(images/menu5.jpg);"></div>
+                        <div class="text">
+                            <div class="d-flex">
+                                <div class="one-half">
+                                    <h3>Belgium Cake</h3>
+                                </div>
+                                <div class="one-forth">
+                                    <span class="price">₹400</span>
+                                </div>
+                            </div>
+                            <p><span>Strawberry</span>, <span>Chocolate</span>, <span>Berry</span>, <span>Cream</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="menus d-flex ftco-animate">
+                        <div class="menu-img img" style="background-image: url(images/menu6.jpg);"></div>
+                        <div class="text">
+                            <div class="d-flex">
+                                <div class="one-half">
+                                    <h3>Cookies</h3>
+                                </div>
+                                <div class="one-forth">
+                                    <span class="price">₹400</span>
+                                </div>
+                            </div>
+                            <p><span>Strawberry</span>, <span>Chocolate</span>, <span>Berry</span>, <span>Cream</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 menu-wrap">
+                    <div class="heading-menu text-center ftco-animate">
+                        <h3>Pastries</h3>
+                    </div>
+                    <div class="menus d-flex ftco-animate">
+                        <div class="menu-img img" style="background-image: url(images/menu7.jpg);"></div>
+                        <div class="text">
+                            <div class="d-flex">
+                                <div class="one-half">
+                                    <h3>Blackberries</h3>
+                                </div>
+                                <div class="one-forth">
+                                    <span class="price">₹400</span>
+                                </div>
+                            </div>
+                            <p><span>Strawberry</span>, <span>Chocolate</span>, <span>Berry</span>, <span>Cream</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="menus d-flex ftco-animate">
+                        <div class="menu-img img" style="background-image: url(images/menu8.jpg);"></div>
+                        <div class="text">
+                            <div class="d-flex">
+                                <div class="one-half">
+                                    <h3>Orange</h3>
+                                </div>
+                                <div class="one-forth">
+                                    <span class="price">₹400</span>
+                                </div>
+                            </div>
+                            <p><span>Strawberry</span>, <span>Chocolate</span>, <span>Berry</span>, <span>Cream</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="menus d-flex ftco-animate">
+                        <div class="menu-img img" style="background-image: url(images/menu9.jpg);"></div>
+                        <div class="text">
+                            <div class="d-flex">
+                                <div class="one-half">
+                                    <h3>Mango</h3>
+                                </div>
+                                <div class="one-forth">
+                                    <span class="price">₹400</span>
+                                </div>
+                            </div>
+                            <p><span>Strawberry</span>, <span>Chocolate</span>, <span>Berry</span>, <span>Cream</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- menu section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Footer Section Starts -->
+<section class="ftco-footer ftco-bg-dark ftco-section">
+    <div class="container">
+        
+        <!-- Top Center Contact Details -->
+        <div class="row justify-content-center mb-4">
+            <div class="col-md-6 text-center">
+                <ul class="ftco-footer-social list-unstyled d-flex justify-content-center">
+                    <!-- Instagram Links -->
+                    <li class="ftco-animate mx-2">
+                        <a href="https://instagram.com/cakebakery" target="_blank">
+                            <span class="fa fa-instagram"></span>
+                        </a>
+                    </li>
+                    <li class="ftco-animate mx-2">
+                        <a href="https://instagram.com/plants" target="_blank">
+                            <span class="fa fa-instagram"></span>
+                        </a>
+                    </li>
+                    <li class="ftco-animate mx-2">
+                        <a href="https://instagram.com/decorations" target="_blank">
+                            <span class="fa fa-instagram"></span>
+                        </a>
+                    </li>
+                    <!-- Email Link -->
+                    <li class="ftco-animate mx-2">
+                        <a href="mailto:sha@gmail.com">
+                            <span class="fa fa-envelope"></span>
+                        </a>
+                    </li>
+                    <!-- Phone Link -->
+                    <li class="ftco-animate mx-2">
+                        <a href="tel:+919961884561">
+                            <span class="fa fa-phone"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Main Footer Content -->
+        <div class="row justify-content-center">
+            <div class="col-md-8 text-center">
+                <div class="ftco-footer-widget mb-4">
+                    <h2 class="ftco-heading-2">Les Laits</h2>
+                    <p>We serve and take all types of cake orders. Personalize your cake with unique designs and flavors of your choice.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Newsletter Subscription -->
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="ftco-footer-widget mb-4">
+                    <h2 class="ftco-heading-2 text-center">Newsletter</h2>
+                    <p class="text-center">Get our monthly cake catalog by subscribing below.</p>
+                    <form action="#" class="subscribe-form">
+                        <div class="form-group">
+                            <input type="email" name="newsletter_email" class="form-control mb-2 text-center" placeholder="Your Email" required>
+                            <input type="submit" value="Subscribe" class="form-control submit px-3">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- Footer Section Ends -->
+
+
+
+
+
+    <!-- scripts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/jquery.timepicker.min.js"></script>
+    <script src="js/scrollax.min.js"></script>
+    <script src="main.js"></script>
+    <form method="post" action="connect.php"></form>
+</body>
+
+
+</html>

@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Les Laits</title>
+    <link rel = "icon" href =""type = "image/x-icon">
+
+<body>
+   
+
+<!-- Include Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    // Close the dropdown when clicking outside the navbar
+    $(document).ready(function() {
+        $(document).click(function(event) {
+            if (!$(event.target).closest('#ftco-navbar').length) {
+                $('#ftco-nav').collapse('hide');
+            }
+        });
+    });
+</script>
+
+   <!-- navigation starts -->
+   <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light fixed-top" id="ftco-navbar">
+    <div class="container">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#"></a>
+
+        <!-- Toggler Button for Mobile -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span> <!-- This is the hamburger icon -->
+        </button>
+
+        <!-- Collapsible Navbar Links -->
+        <div class="collapse navbar-collapse" id="ftco-nav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li class="nav-item"><a href="#menu" class="nav-link">Menu</a></li>
+                <li class="nav-item"><a href="#testimonial" class="nav-link">Testimonials</a></li>
+                <li class="nav-item cta"><a href="#order" class="nav-link">Order Now</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- navigation ends -->
+ 
+
+
+    <!-- slider  section start -->
+    <section class="home-slider owl-carousel js-fullheight">
+        <div class="slider-item js-fullheight" style="background-image: url(images/bg_1.jpg);">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row slider-text js-fullheight justify-content-center align-items-center"
+                    data-scrollax-parent="true">
+
+                    <div class="col-md-12 col-sm-12 text-center ftco-animate">
+                        <span class="subheading">Lahza Makers & Co</span>
+                        <h1 class="mb-4">"Create a moment with us"</h1>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="slider-item js-fullheight" style="background-image: url(images/bg_1.jpg);">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row slider-text js-fullheight justify-content-center align-items-center"
+                    data-scrollax-parent="true">
+
+                    <div class="col-md-12 col-sm-12 text-center ftco-animate">
+                        <span class="subheading">Les Laits</span>
+                        <h1 class="mb-4">Desert Catering Artisanal Cake | Bakes </h1>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="slider-item js-fullheight" style="background-image: url(images/bg_2.jpg);">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row slider-text js-fullheight justify-content-center align-items-center"
+                    data-scrollax-parent="true">
+
+                    <div class="col-md-12 col-sm-12 text-center ftco-animate">
+                        <span class="subheading">An Lahza Affair</span>
+                        <h1 class="mb-4">Decorations</h1>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="slider-item js-fullheight" style="background-image: url(images/bg_2.jpg);">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row slider-text js-fullheight justify-content-center align-items-center"
+                    data-scrollax-parent="true">
+
+                    <div class="col-md-12 col-sm-12 text-center ftco-animate">
+                        <span class="subheading">Lahza</span>
+                        <h1 class="mb-4">Personalised Gifting | Flower Shop</h1>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+       
+    </section>
+
+
+    <style>
+        .owl-carousel.home-slider .slider-item .slider-text h1 {
+    font-size: 35px;
+    color: #ffffff;
+    font-weight: 600;
+    margin-bottom: 0;
+    line-height: 1.5;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-family: "Poppins", cursive;
+}
+    </style>
+    <!-- slider  section end  -->
+
+<!-- About Us Section Starts -->
+<section class="ftco-wrap-about" id="about">
+    <div class="intro">
+        <div class="container">
+            <div class="heading-section ftco-animate mb-5 text-center">
+                <span class="subheading">Our</span>
+                <h2 class="mb-4">Franchises</h2>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="row">
+                        <div class="col-xl-4 col-md-6 col-sm-12 intro_col">
+                            <div class="intro_image position-relative">
+                                <img src="images/intro_1.jpg" alt="Cake">
+                                <div class="btn-overlay">
+                                    <a href="#cakes" class="btn btn-primary">Les Laits</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6 col-sm-12 intro_col">
+                            <div class="intro_image position-relative">
+                                <img src="images/intro_2.jpg" alt="Decorations">
+                                <div class="btn-overlay">
+                                    <a href="#decorations" class="btn btn-primary">Lahza</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6 col-sm-12 intro_col">
+                            <div class="intro_image position-relative">
+                                <img src="images/intro_2.jpg" alt="Decorations">
+                                <div class="btn-overlay">
+                                    <a href="#decorations" class="btn btn-primary">An Lahza Affarir</a>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CSS to style the buttons and images -->
+<style>
+    .intro_image {
+        position: relative;
+        text-align: center;
+        overflow: hidden;
+        margin-bottom: 15px; /* Added space between images */
+    }
+
+    .intro_image img {
+        width: 100%;
+        height: 250px; /* Making the image rectangular */
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .btn-overlay {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        text-align: center;
+    }
+
+    .btn-overlay .btn {
+        background-color: rgb(200, 169, 126); 
+        color: white;
+        padding: 6px 20px;
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: 14px;
+        text-transform: uppercase;
+        border: none;
+        transition: background-color 0.3s;
+    }
+
+    .btn-overlay .btn:hover {
+        background-color: rgb(180, 140, 100); /* Slightly darker brown */
+    }
+
+    .btn-overlay .btn:focus, 
+    .btn-overlay .btn:active {
+        background-color: rgb(200, 169, 126) !important; /* No red effect */
+        outline: none;
+        box-shadow: none;
+    }
+
+    /* Ensuring spacing and alignment on small screens */
+    @media (max-width: 768px) {
+        .intro_col {
+            padding: 0 10px; /* Adds spacing between columns */
+        }
+    }
+</style>
+
+
+
+
+
+    <!-- about us section ends  -->
+
+    <!-- gallery section starts  -->
+    <section class="ftco-section bg-light" id="gallery">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title normal-title">
+                        <div class="row justify-content-center mb-5 pb-2">
+                            <div class="col-md-12 text-center heading-section ftco-animate">
+                                <span class="subheading">Gallery</span>
+                                <h2 class="mb-4"></h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-6 p-0">
+                    <div class="gallery__pic">
+                        <img src="images/dish1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 p-0">
+                    <div class="gallery__pic">
+                        <img src="images/dish2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 p-0">
+                    <div class="gallery__pic">
+                        <img src="images/dish3.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 p-0">
+                    <div class="gallery__pic">
+                        <img src="images/dish4.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 p-0">
+                    <div class="gallery__pic">
+                        <img src="images/dish5.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 p-0">
+                    <div class="gallery__pic">
+                        <img src="images/dish6.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 p-0">
+                    <div class="gallery__pic">
+                        <img src="images/dish7.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 p-0">
+                    <div class="gallery__pic">
+                        <img src="images/dish8.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    <!-- gallery section ends  -->
+
+    <!-- menu section starts -->
+    <section class="ftco-section" id="menu">
+        <div class="container-fluid px-4">
+            <div class="row justify-content-center mb-5 pb-2">
+                <div class="col-md-7 text-center heading-section ftco-animate">
+                    <span class="subheading">Specialities</span>
+                    <h2 class="mb-4">Our Menu</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 col-lg-4 menu-wrap">
+                    <div class="heading-menu text-center ftco-animate">
+                        <h3>Cakes</h3>
+                    </div>
+                    <div class="menus d-flex ftco-animate">
+                        <div class="menu-img img" style="background-image: url(images/menu1.jpg);"></div>
+                        <div class="text">
+                            <div class="d-flex">
+                                <div class="one-half">
+                                    <h3>Strawberry</h3>
+                                </div>
+                                <div class="one-forth">
+                                    <span class="price">₹400</span>
+                                </div>
+                            </div>
+                            <p><span>Strawberry</span>, <span>Chocolate</span>, <span>Berry</span>, <span>Cream</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="menus d-flex ftco-animate">
+                        <div class="menu-img img" style="background-image: url(images/menu2.jpg);"></div>
+                        <div class="text">
+                            <div class="d-flex">
+                                <div class="one-half">
+                                    <h3>Chocolate Cake</h3>
+                                </div>
+                                <div class="one-forth">
+                                    <span class="price">₹399</span>
+                                </div>
+                            </div>
+                            <p><span>Strawberry</span>, <span>Chocolate</span>, <span>Berry</span>, <span>Cream</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="menus d-flex ftco-animate">
+                        <div class="menu-img img" style="background-image: url(images/menu3.jpg);"></div>
+                        <div class="text">
+                            <div class="d-flex">
+                                <div class="one-half">
+                                    <h3>Red Valvet</h3>
+                                </div>
+                                <div class="one-forth">
+                                    <span class="price">₹500</span>
+                                </div>
+                            </div>
+                            <p><span>Strawberry</span>, <span>Chocolate</span>, <span>Berry</span>, <span>Cream</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 menu-wrap">
+                    <div class="heading-menu text-center ftco-animate">
+                        <h3>Wedding Cake</h3>
+                    </div>
+                    <div class="menus d-flex ftco-animate">
+                        <div class="menu-img img" style="background-image: url(images/menu4.jpg);"></div>
+                        <div class="text">
+                            <div class="d-flex">
+                                <div class="one-half">
+                                    <h3>Pineapple</h3>
+                                </div>
+                                <div class="one-forth">
+                                    <span class="price">₹450</span>
+                                </div>
+                            </div>
+                            <p><span>Strawberry</span>, <span>Chocolate</span>, <span>Berry</span>, <span>Cream</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="menus d-flex ftco-animate">
+                        <div class="menu-img img" style="background-image: url(images/menu5.jpg);"></div>
+                        <div class="text">
+                            <div class="d-flex">
+                                <div class="one-half">
+                                    <h3>Belgium Cake</h3>
+                                </div>
+                                <div class="one-forth">
+                                    <span class="price">₹400</span>
+                                </div>
+                            </div>
+                            <p><span>Strawberry</span>, <span>Chocolate</span>, <span>Berry</span>, <span>Cream</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="menus d-flex ftco-animate">
+                        <div class="menu-img img" style="background-image: url(images/menu6.jpg);"></div>
+                        <div class="text">
+                            <div class="d-flex">
+                                <div class="one-half">
+                                    <h3>Cookies</h3>
+                                </div>
+                                <div class="one-forth">
+                                    <span class="price">₹400</span>
+                                </div>
+                            </div>
+                            <p><span>Strawberry</span>, <span>Chocolate</span>, <span>Berry</span>, <span>Cream</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 menu-wrap">
+                    <div class="heading-menu text-center ftco-animate">
+                        <h3>Pastries</h3>
+                    </div>
+                    <div class="menus d-flex ftco-animate">
+                        <div class="menu-img img" style="background-image: url(images/menu7.jpg);"></div>
+                        <div class="text">
+                            <div class="d-flex">
+                                <div class="one-half">
+                                    <h3>Blackberries</h3>
+                                </div>
+                                <div class="one-forth">
+                                    <span class="price">₹400</span>
+                                </div>
+                            </div>
+                            <p><span>Strawberry</span>, <span>Chocolate</span>, <span>Berry</span>, <span>Cream</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="menus d-flex ftco-animate">
+                        <div class="menu-img img" style="background-image: url(images/menu8.jpg);"></div>
+                        <div class="text">
+                            <div class="d-flex">
+                                <div class="one-half">
+                                    <h3>Orange</h3>
+                                </div>
+                                <div class="one-forth">
+                                    <span class="price">₹400</span>
+                                </div>
+                            </div>
+                            <p><span>Strawberry</span>, <span>Chocolate</span>, <span>Berry</span>, <span>Cream</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="menus d-flex ftco-animate">
+                        <div class="menu-img img" style="background-image: url(images/menu9.jpg);"></div>
+                        <div class="text">
+                            <div class="d-flex">
+                                <div class="one-half">
+                                    <h3>Mango</h3>
+                                </div>
+                                <div class="one-forth">
+                                    <span class="price">₹400</span>
+                                </div>
+                            </div>
+                            <p><span>Strawberry</span>, <span>Chocolate</span>, <span>Berry</span>, <span>Cream</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- menu section ends -->
+
+
+
+    
+<!-- About Us Section Starts -->
+<section class="ftco-section d-flex align-items-center justify-content-center" id="about" style="background-color: #f8f9fa; min-height: 100vh;">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8 ftco-animate p-4 px-md-5 pb-md-5 bg-white rounded-lg shadow-lg" style="border-radius: 20px;">
+                <div class="heading-section ftco-animate mb-5 text-center">
+                    <span class="subheading">About Us</span>
+                    <h2 class="mb-4">Who We Are</h2>
+                </div>
+
+                <!-- About Us Content -->
+                <div class="text-center">
+                    <p class="mb-4">
+                        "Lahza Makers & Co is built on the idea that every moment is worth cherishing. Inspired by the meaning of ‘Lahza’ – moments – we aim to craft unique experiences that reflect your individuality. With three specialized ventures, we focus on personalizing your celebrations, making each moment special."
+                    </p>
+                </div>
+
+                <!-- Founder’s Note -->
+                <div class="mt-5">
+                    <h4 class="text-center mb-3">Founder’s Note</h4>
+                    <p class="text-center">
+                        "Hi, I’m Chrislin Rose, the founder and builder lead of Lahza Makers & Co. Our journey began with a simple goal – to create meaningful moments through thoughtful, customized experiences. From desserts to decor, we’re here to bring your vision to life."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- About Us Section Ends -->
+
+   <!-- Counter Section Starts -->
+   <section class="ftco-section ftco-counter img ftco-no-pt d-flex align-items-center justify-content-center" id="section-counter">
+    <div class="container text-center">
+        <div class="row justify-content-center">
+            <div class="col-md-9 text-center">
+                <div class="row d-flex justify-content-center align-items-center">
+                    <div class="col-md-6 col-lg-3 mb-4 mb-lg-0 d-flex justify-content-center counter-wrap ftco-animate">
+                        <div class="block-18">
+                            <div class="text">
+                                <strong class="number" data-number="5">0</strong>
+                                <span>Years of Experience</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 mb-4 mb-lg-0 d-flex justify-content-center counter-wrap ftco-animate">
+                        <div class="block-18">
+                            <div class="text">
+                                <strong class="number" data-number="100">0</strong>
+                                <span>Cakes/Variety</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 mb-4 mb-lg-0 d-flex justify-content-center counter-wrap ftco-animate">
+                        <div class="block-18">
+                            <div class="text">
+                                <strong class="number" data-number="1500">0</strong>
+                                <span>Happy Customers</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Counter Section Ends -->
+
+
+
+   <!-- Testimonial Section Starts -->
+<section class="ftco-section testimony-section img" id="testimonial" style="background-image: url(images/bg_1.jpg);">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row justify-content-center mb-5">
+            <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
+                <span class="subheading">Testimonials</span>
+                <h2 class="mb-3">Happy Clients</h2>
+            </div>
+        </div>
+        <div class="row ftco-animate">
+            <div class="col-md-12">
+                <!-- Google Reviews Widget -->
+                <script src="https://static.elfsight.com/platform/platform.js" async></script>
+                <div class="elfsight-app-73e789ca-ead1-48b9-aa07-945d40d07d2c" data-elfsight-app-lazy></div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Testimonial Section Ends -->
+
+
+<!-- Order a Cake Section Starts -->
+<section class="ftco-section d-flex align-items-center justify-content-center" id="order" style="background-color: #ffffff; height: 100vh;">
+    <div class="container d-flex justify-content-center">
+        <div class="row d-flex justify-content-center w-100">
+            <div class="col-md-7 ftco-animate makereservation p-4 px-md-5 pb-md-5 bg-white rounded-lg shadow-lg" style="border-radius: 20px;">
+                <div class="heading-section ftco-animate mb-5 text-center">
+                    <span class="subheading">Order</span>
+                    <h2 class="mb-4">Now!!!</h2>
+                </div>
+
+                <!-- WhatsApp Order Form -->
+                <form id="orderForm">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="phone">Phone</label>
+                                <input type="tel" class="form-control" id="phone" placeholder="Your Number" pattern="[0-9]{10}" title="Phone number should be 10 digits" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="address">Address</label>
+                                <input type="text" class="form-control" id="address" placeholder="Your Address" required>
+                            </div>
+                        </div>
+
+                        <!-- Custom Dropdown Checkbox List -->
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Order</label>
+                                <div id="orderDropdown" class="dropdown-check-list" tabindex="100">
+                                    <span class="anchor">Select Order</span>
+                                    <ul class="items">
+                                        <li><input type="checkbox" value="Cakes" /> Cakes</li>
+                                        <li><input type="checkbox" value="Decorations" /> Decorations</li>
+                                        <li><input type="checkbox" value="Flower Shop" /> Flower Shop</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12 mt-3 text-center">
+                            <button type="submit" class="btn btn-primary py-3 px-5">Order via WhatsApp</button>
+                        </div>
+                    </div>
+                </form>
+                <!-- WhatsApp Order Form Ends -->
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Order a Cake Section Ends -->
+
+<!-- Styles for Custom Dropdown -->
+<style>
+.dropdown-check-list {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+}
+.dropdown-check-list .anchor {
+    width: 100%;
+    display: block;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    background: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.dropdown-check-list .anchor:after {
+    content: "▼";
+    float: right;
+}
+.dropdown-check-list ul.items {
+    display: none;
+    position: absolute;
+    width: 100%;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-top: none;
+    list-style: none;
+    padding: 5px;
+    margin: 0;
+    z-index: 1000;
+    border-radius: 5px;
+}
+.dropdown-check-list ul.items li {
+    padding: 5px;
+}
+.dropdown-check-list ul.items li:hover {
+    background: #f2f2f2;
+}
+.dropdown-check-list.visible .items {
+    display: block;
+}
+</style>
+
+<!-- JavaScript to Handle Dropdown and WhatsApp Order Submission -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    let checkList = document.getElementById("orderDropdown");
+    let anchor = checkList.querySelector(".anchor");
+    let items = checkList.querySelector(".items");
+
+    // Toggle dropdown visibility
+    anchor.addEventListener("click", function() {
+        checkList.classList.toggle("visible");
+    });
+
+    // Close dropdown if clicked outside
+    document.addEventListener("click", function(event) {
+        if (!checkList.contains(event.target)) {
+            checkList.classList.remove("visible");
+        }
+    });
+
+    document.getElementById("orderForm").addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent form submission
+
+        // Get form values
+        let name = document.getElementById("name").value;
+        let phone = document.getElementById("phone").value;
+        let address = document.getElementById("address").value;
+
+        // Get selected order types
+        let selectedOrders = [];
+        checkList.querySelectorAll("input[type=checkbox]").forEach(function(checkbox) {
+            if (checkbox.checked) {
+                selectedOrders.push(checkbox.value);
+            }
+        });
+
+        let orderType = selectedOrders.length > 0 ? selectedOrders.join(", ") : "Not specified";
+
+        // WhatsApp Number (Replace with Seller's WhatsApp Number)
+        let sellerPhoneNumber = "9778744658"; // Replace with your WhatsApp number
+
+        // Create WhatsApp message
+        let message = `Hello, I want to place an order!%0A
+        *Name:* ${name}%0A
+        *Phone:* ${phone}%0A
+        *Address:* ${address}%0A
+        *Order Type:* ${orderType}%0A
+        Please confirm my order.`;
+
+        // WhatsApp URL
+        let whatsappURL = `https://wa.me/${sellerPhoneNumber}?text=${message}`;
+
+        // Redirect to WhatsApp
+        window.open(whatsappURL, "_blank");
+    });
+});
+</script>
+
+
+
+<!-- Footer Section Starts -->
+<section class="ftco-footer ftco-bg-dark ftco-section">
+    <div class="container">
+        
+        <!-- Top Center Contact Details -->
+        <div class="row justify-content-center mb-4">
+            <div class="col-md-6 text-center">
+                <ul class="ftco-footer-social list-unstyled d-flex justify-content-center">
+                    <!-- Instagram Links -->
+                    <li class="ftco-animate mx-2">
+                        <a href="https://instagram.com/cakebakery" target="_blank">
+                            <span class="fa fa-instagram"></span>
+                        </a>
+                    </li>
+                    <li class="ftco-animate mx-2">
+                        <a href="https://instagram.com/plants" target="_blank">
+                            <span class="fa fa-instagram"></span>
+                        </a>
+                    </li>
+                    <li class="ftco-animate mx-2">
+                        <a href="https://instagram.com/decorations" target="_blank">
+                            <span class="fa fa-instagram"></span>
+                        </a>
+                    </li>
+                    <!-- Email Link -->
+                    <li class="ftco-animate mx-2">
+                        <a href="mailto:sha@gmail.com">
+                            <span class="fa fa-envelope"></span>
+                        </a>
+                    </li>
+                    <!-- Phone Link -->
+                    <li class="ftco-animate mx-2">
+                        <a href="tel:+919961884561">
+                            <span class="fa fa-phone"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Main Footer Content -->
+        <div class="row justify-content-center">
+            <div class="col-md-8 text-center">
+                <div class="ftco-footer-widget mb-4">
+                    <h2 class="ftco-heading-2">Les Laits</h2>
+                    <p>We serve and take all types of cake orders. Personalize your cake with unique designs and flavors of your choice.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Newsletter Subscription -->
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="ftco-footer-widget mb-4">
+                    <h2 class="ftco-heading-2 text-center">Newsletter</h2>
+                    <p class="text-center">Get our monthly cake catalog by subscribing below.</p>
+                    <form action="#" class="subscribe-form">
+                        <div class="form-group">
+                            <input type="email" name="newsletter_email" class="form-control mb-2 text-center" placeholder="Your Email" required>
+                            <input type="submit" value="Subscribe" class="form-control submit px-3">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- Footer Section Ends -->
+
+
+
+
+
+    <!-- scripts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/jquery.timepicker.min.js"></script>
+    <script src="js/scrollax.min.js"></script>
+    <script src="main.js"></script>
+    <form method="post" action="connect.php"></form>
+</body>
+
+
+</html>
