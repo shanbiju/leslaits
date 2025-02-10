@@ -31,27 +31,54 @@
 
 <body>
    
-
 <!-- Include Bootstrap JS and dependencies -->
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery & Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+
 
 <script>
-    // Close the dropdown when clicking outside the navbar
-    $(document).ready(function() {
-        $(document).click(function(event) {
-            if (!$(event.target).closest('#ftco-navbar').length) {
-                $('#ftco-nav').collapse('hide');
+    $(document).ready(function () {
+        // Toggle the navbar when clicking the toggler button
+        $(".navbar-toggler").click(function () {
+            let $navbarCollapse = $("#ftco-nav");
+
+            if ($navbarCollapse.hasClass("show")) {
+                $navbarCollapse.collapse("hide");  // Close if open
+            } else {
+                $navbarCollapse.collapse("show");  // Open if closed
+            }
+        });
+
+        // Close the navbar when clicking a nav-link (for mobile users)
+        $(".nav-link").click(function () {
+            $("#ftco-nav").collapse("hide");
+        });
+
+        // Close the navbar when clicking outside
+        $(document).click(function (event) {
+            let clickOver = $(event.target);
+            let $navbarCollapse = $("#ftco-nav");
+            let isNavbarOpen = $navbarCollapse.hasClass("show");
+
+            if (isNavbarOpen && !clickOver.closest(".navbar").length) {
+                $navbarCollapse.collapse("hide"); // Close menu
             }
         });
     });
 </script>
 
-   <!-- navigation starts -->
-   <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light fixed-top" id="ftco-navbar">
+
+
+ <!-- navigation starts -->
+ <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light fixed-top" id="ftco-navbar">
     <div class="container">
         <!-- Brand -->
-        <a class="navbar-brand" href="#"></a>
+        <a class="navbar-brand" ></a>
 
         <!-- Toggler Button for Mobile -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -61,10 +88,13 @@
         <!-- Collapsible Navbar Links -->
         <div class="collapse navbar-collapse" id="ftco-nav">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item active"><a href="#" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#franchises" class="nav-link">Our Franchises</a></li>
                 <li class="nav-item"><a href="#gallery" class="nav-link">Gallery</a></li>
-                <li class="nav-item"><a href="#menu" class="nav-link">Menu</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About Us</a></li>
+                <li class="nav-item"><a href="leslaits.html" class="nav-link">Leslaits</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">Lahza</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">An Lahza Afair</a></li>
                 <li class="nav-item"><a href="#testimonial" class="nav-link">Testimonials</a></li>
                 <li class="nav-item cta"><a href="#order" class="nav-link">Order Now</a></li>
             </ul>
@@ -72,6 +102,45 @@
     </div>
 </nav>
 <!-- navigation ends -->
+<style>
+/* Make navbar background white with a shadow */
+#ftco-navbar {
+    background-color: white !important;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    margin: 10px auto;
+    width: 95%;
+    padding: 10px 20px;
+}
+
+/* Adjust navbar container */
+#ftco-navbar .container {
+    border-radius: 15px;
+    padding: 5px 15px;
+}
+
+/* Navbar links */
+.navbar-nav .nav-link {
+    color: black !important;
+    font-weight: 600;
+}
+
+/* Highlight active menu item */
+.navbar-nav .nav-item.active .nav-link {
+    color: #ff6600 !important;
+}
+
+/* Change the hamburger (toggler) icon to black */
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='black' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
+
+</style>
+
  
 
 
@@ -158,7 +227,7 @@
     <!-- slider  section end  -->
 
 <!-- About Us Section Starts -->
-<section class="ftco-wrap-about" id="about">
+<section class="ftco-wrap-about" id="franchises">
     <div class="intro">
         <div class="container">
             <div class="heading-section ftco-animate mb-5 text-center">
@@ -277,220 +346,204 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-3 col-md-4 col-6 p-0">
-                    <div class="gallery__pic">
-                        <img src="images/dish1.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-6 p-0">
-                    <div class="gallery__pic">
-                        <img src="images/dish2.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-6 p-0">
-                    <div class="gallery__pic">
-                        <img src="images/dish3.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-6 p-0">
-                    <div class="gallery__pic">
-                        <img src="images/dish4.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-6 p-0">
-                    <div class="gallery__pic">
-                        <img src="images/dish5.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-6 p-0">
-                    <div class="gallery__pic">
-                        <img src="images/dish6.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-6 p-0">
-                    <div class="gallery__pic">
-                        <img src="images/dish7.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-6 p-0">
-                    <div class="gallery__pic">
-                        <img src="images/dish8.jpg" alt="">
-                    </div>
-                </div>
-            </div>
+          <!-- Filter Buttons -->
+          <div class="filter-menu">
+            <!-- Buttons -->
+            <button class="filter-btn active" onclick="filterGallery('all')">All</button>
+            <button class="filter-btn" onclick="filterGallery('leslaits')">Les Laits</button>
+            <button class="filter-btn" onclick="filterGallery('lahza')">Lahza</button>
+            <button class="filter-btn" onclick="filterGallery('anlahza')">An Lahza Affair</button>
         </div>
+        
 
+        <div class="gallery-grid">
+            <!-- Les Laits (2 Images) -->
+            <div class="gallery-item leslaits"><img src="images/dish1.jpg" alt="Les Laits 1"></div>
+            <div class="gallery-item leslaits"><img src="images/dish1.jpg" alt="Les Laits 2"></div>
+        
+            <!-- Lahza (2 Images) -->
+            <div class="gallery-item lahza"><img src="images/dish6.jpg" alt="Lahza 1"></div>
+            <div class="gallery-item lahza"><img src="images/dish2.jpg" alt="Lahza 2"></div>
+        
+            <!-- An Lahza Affair (2 Images) -->
+            <div class="gallery-item anlahza"><img src="images/dish1.jpg" alt="An Lahza Affair 1"></div>
+            <div class="gallery-item anlahza"><img src="images/dish1.jpg" alt="An Lahza Affair 2"></div>
+        </div>
+        
+
+
+
+<style>
+/* General Styling for Filter Buttons */
+.filter-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 8px; /* Rounded shape */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Default Button Style */
+.filter-btn {
+    background-color: #f5f5f5;
+    color: #888888;
+    border: 1px solid #ddd;
+}
+
+/* Active Button Style */
+.filter-btn.active {
+    background-color: #3b3bf9; /* Highlighted color */
+    color: #ffffff;
+}
+
+/* Hover Effect */
+.filter-btn:hover {
+    background-color: #6f6ff9;
+    color: white;
+}
+
+
+/* Gallery Container */
+.gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; /* Space between images */
+}
+
+
+
+
+
+/* Animation on Hover */
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+/* Animation on Load */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.gallery-item {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+
+    /* General Styles */
+    #gallery {
+        padding: 50px 0;
+    }
+    
+    .heading-section {
+        margin-bottom: 20px;
+    }
+    
+    /* Filter Buttons */
+   /* Center the filter menu */
+.filter-menu {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Ensures proper alignment on small screens */
+    gap: 10px; /* Adds space between buttons */
+    text-align: center;
+}
+
+/* Ensure buttons stay centered */
+.filter-btn {
+    display: inline-block;
+    text-align: center;
+
+
+border: none;
+        background: #c8a97e;;
+        color: white;
+        padding: 10px 20px;
+        margin: 5px;
+        cursor: pointer;
+        border-radius: 8px;
+        font-weight: bold;
+        transition: all 0.3s ease-in-out;
+
+
+}
+    .filter-btn:hover,
+    .filter-btn.active {
+        background: #333;
+    }
+    
+    /* Gallery Grid */
+    .gallery-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .gallery-item {
+        position: relative;
+        overflow: hidden;
+        margin: 10px;
+        border-radius: 15px;
+        transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    }
+    
+    .gallery-item img {
+        width: 100%;
+        height: auto;
+        border-radius: 15px;
+        display: block;
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .gallery-item:hover img {
+        transform: scale(1.1);
+    }
+    
+    /* Animation Effect */
+    .gallery-item {
+        opacity: 0;
+        transform: scale(0.8);
+        animation: fadeIn 0.6s ease-in-out forwards;
+    }
+    
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: scale(0.8);
+        }
+        to {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+    
+    /* Hide images initially */
+    .gallery-item.hidden {
+        display: none;
+    }
+</style>    
 
     </section>
     <!-- gallery section ends  -->
 
-    <!-- menu section starts -->
-    <section class="ftco-section" id="menu">
-        <div class="container-fluid px-4">
-            <div class="row justify-content-center mb-5 pb-2">
-                <div class="col-md-7 text-center heading-section ftco-animate">
-                    <span class="subheading">Specialities</span>
-                    <h2 class="mb-4">Our Menu</h2>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-6 col-lg-4 menu-wrap">
-                    <div class="heading-menu text-center ftco-animate">
-                        <h3>Cakes</h3>
-                    </div>
-                    <div class="menus d-flex ftco-animate">
-                        <div class="menu-img img" style="background-image: url(images/menu1.jpg);"></div>
-                        <div class="text">
-                            <div class="d-flex">
-                                <div class="one-half">
-                                    <h3>Strawberry</h3>
-                                </div>
-                                <div class="one-forth">
-                                    <span class="price">₹400</span>
-                                </div>
-                            </div>
-                            <p><span>Strawberry</span>, <span>Chocolate</span>, <span>Berry</span>, <span>Cream</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="menus d-flex ftco-animate">
-                        <div class="menu-img img" style="background-image: url(images/menu2.jpg);"></div>
-                        <div class="text">
-                            <div class="d-flex">
-                                <div class="one-half">
-                                    <h3>Chocolate Cake</h3>
-                                </div>
-                                <div class="one-forth">
-                                    <span class="price">₹399</span>
-                                </div>
-                            </div>
-                            <p><span>Strawberry</span>, <span>Chocolate</span>, <span>Berry</span>, <span>Cream</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="menus d-flex ftco-animate">
-                        <div class="menu-img img" style="background-image: url(images/menu3.jpg);"></div>
-                        <div class="text">
-                            <div class="d-flex">
-                                <div class="one-half">
-                                    <h3>Red Valvet</h3>
-                                </div>
-                                <div class="one-forth">
-                                    <span class="price">₹500</span>
-                                </div>
-                            </div>
-                            <p><span>Strawberry</span>, <span>Chocolate</span>, <span>Berry</span>, <span>Cream</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 menu-wrap">
-                    <div class="heading-menu text-center ftco-animate">
-                        <h3>Wedding Cake</h3>
-                    </div>
-                    <div class="menus d-flex ftco-animate">
-                        <div class="menu-img img" style="background-image: url(images/menu4.jpg);"></div>
-                        <div class="text">
-                            <div class="d-flex">
-                                <div class="one-half">
-                                    <h3>Pineapple</h3>
-                                </div>
-                                <div class="one-forth">
-                                    <span class="price">₹450</span>
-                                </div>
-                            </div>
-                            <p><span>Strawberry</span>, <span>Chocolate</span>, <span>Berry</span>, <span>Cream</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="menus d-flex ftco-animate">
-                        <div class="menu-img img" style="background-image: url(images/menu5.jpg);"></div>
-                        <div class="text">
-                            <div class="d-flex">
-                                <div class="one-half">
-                                    <h3>Belgium Cake</h3>
-                                </div>
-                                <div class="one-forth">
-                                    <span class="price">₹400</span>
-                                </div>
-                            </div>
-                            <p><span>Strawberry</span>, <span>Chocolate</span>, <span>Berry</span>, <span>Cream</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="menus d-flex ftco-animate">
-                        <div class="menu-img img" style="background-image: url(images/menu6.jpg);"></div>
-                        <div class="text">
-                            <div class="d-flex">
-                                <div class="one-half">
-                                    <h3>Cookies</h3>
-                                </div>
-                                <div class="one-forth">
-                                    <span class="price">₹400</span>
-                                </div>
-                            </div>
-                            <p><span>Strawberry</span>, <span>Chocolate</span>, <span>Berry</span>, <span>Cream</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 menu-wrap">
-                    <div class="heading-menu text-center ftco-animate">
-                        <h3>Pastries</h3>
-                    </div>
-                    <div class="menus d-flex ftco-animate">
-                        <div class="menu-img img" style="background-image: url(images/menu7.jpg);"></div>
-                        <div class="text">
-                            <div class="d-flex">
-                                <div class="one-half">
-                                    <h3>Blackberries</h3>
-                                </div>
-                                <div class="one-forth">
-                                    <span class="price">₹400</span>
-                                </div>
-                            </div>
-                            <p><span>Strawberry</span>, <span>Chocolate</span>, <span>Berry</span>, <span>Cream</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="menus d-flex ftco-animate">
-                        <div class="menu-img img" style="background-image: url(images/menu8.jpg);"></div>
-                        <div class="text">
-                            <div class="d-flex">
-                                <div class="one-half">
-                                    <h3>Orange</h3>
-                                </div>
-                                <div class="one-forth">
-                                    <span class="price">₹400</span>
-                                </div>
-                            </div>
-                            <p><span>Strawberry</span>, <span>Chocolate</span>, <span>Berry</span>, <span>Cream</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="menus d-flex ftco-animate">
-                        <div class="menu-img img" style="background-image: url(images/menu9.jpg);"></div>
-                        <div class="text">
-                            <div class="d-flex">
-                                <div class="one-half">
-                                    <h3>Mango</h3>
-                                </div>
-                                <div class="one-forth">
-                                    <span class="price">₹400</span>
-                                </div>
-                            </div>
-                            <p><span>Strawberry</span>, <span>Chocolate</span>, <span>Berry</span>, <span>Cream</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- menu section ends -->
+   
 
 
 
@@ -799,20 +852,22 @@ document.addEventListener("DOMContentLoaded", function() {
         </div>
 
         <!-- Newsletter Subscription -->
-        <div class="row justify-content-center">
-            <div class="col-md-6">
-                <div class="ftco-footer-widget mb-4">
-                    <h2 class="ftco-heading-2 text-center">Newsletter</h2>
-                    <p class="text-center">Get our monthly cake catalog by subscribing below.</p>
-                    <form action="#" class="subscribe-form">
-                        <div class="form-group">
-                            <input type="email" name="newsletter_email" class="form-control mb-2 text-center" placeholder="Your Email" required>
-                            <input type="submit" value="Subscribe" class="form-control submit px-3">
-                        </div>
-                    </form>
-                </div>
-            </div>
+        
+ <div class="row justify-content-center">
+    <div class="col-md-6 text-center">
+        <div class="ftco-footer-widget mb-4">
+            <h2 class="ftco-heading-2">Location</h2>
+            <p>Thrissur</p>
         </div>
+  
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509365!2d144.95592331590427!3d-37.81720967975153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d47f0f8654b%3A0xb8b37b06b9d8549e!2s123%20Bakery%20St%2C%20City%2C%20Country!5e0!3m2!1sen!2sus!4v1616729123456"
+                width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+        </div>
+    </div>
+</div>
 
     </div>
 </section>
