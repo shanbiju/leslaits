@@ -100,7 +100,8 @@
             </ul>
         </div>
     </div>
-</nav>
+</nav>    
+
 <!-- navigation ends -->
 <style>
 /* Make navbar background white with a shadow */
@@ -108,15 +109,17 @@
     background-color: white !important;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     border-radius: 15px;
-    margin: 10px auto;
-    width: 95%;
     padding: 10px 20px;
-}
+    width: auto;
+    margin: 10px;
+    }
+
 
 /* Adjust navbar container */
 #ftco-navbar .container {
     border-radius: 15px;
     padding: 5px 15px;
+    
 }
 
 /* Navbar links */
@@ -139,11 +142,44 @@
     background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='black' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
 }
 
+/* Reduce Navbar Size for Mobile */
+@media (max-width: 768px) {
+    #ftco-navbar {
+        padding: 5px 10px; /* Reduce padding */
+        height: auto; /* Adjust height dynamically */
+        width: 391px;
+    
+    }
+
+    .navbar-brand img {
+        height: 30px; /* Reduce logo size */
+    }
+
+    .navbar-toggler {
+        padding: 5px 8px; /* Reduce toggler button padding */
+    }
+
+    .navbar-nav {
+        font-size: 14px; /* Reduce font size */
+    }
+
+    .nav-link {
+        padding: 8px 10px; /* Adjust spacing */
+    }
+
+    .cta .nav-link {
+        padding: 6px 12px; /* Reduce button padding */
+        font-size: 14px; /* Smaller button text */
+    }
+   
+
+
+
+}
+
 </style>
 
  
-
-
     <!-- slider  section start -->
     <section class="home-slider owl-carousel js-fullheight">
         <div class="slider-item js-fullheight" style="background-image: url(images/bg_1.jpg);">
@@ -318,10 +354,30 @@
 
     /* Ensuring spacing and alignment on small screens */
     @media (max-width: 768px) {
-        .intro_col {
-            padding: 0 10px; /* Adds spacing between columns */
-        }
+    .home-slider .slider-item {
+        height: 90vh !important;  /* Reduce height on mobile */
+        background-size: cover;  /* Ensure images fit well */
+        background-position: center;
+        
+
     }
+
+    .home-slider .slider-item .slider-text h1 {
+        font-size: 24px !important; /* Reduce text size */
+        letter-spacing: 2px;
+        line-height: 1.3;
+    }
+
+    .home-slider .slider-item .slider-text {
+        padding: 10px; /* Add padding for better spacing */
+    }
+
+    .owl-carousel .owl-nav {
+        display: none; /* Hide navigation arrows on mobile if needed */
+    }
+}
+
+    
 </style>
 
 
@@ -448,7 +504,7 @@
 
     /* General Styles */
     #gallery {
-        padding: 50px 0;
+        padding: 100px 0;
     }
     
     .heading-section {
@@ -577,6 +633,7 @@ border: none;
     </div>
 </section>
 <!-- About Us Section Ends -->
+
 
    <!-- Counter Section Starts -->
    <section class="ftco-section ftco-counter img ftco-no-pt d-flex align-items-center justify-content-center" id="section-counter">
@@ -862,7 +919,7 @@ document.addEventListener("DOMContentLoaded", function() {
   
         <div class="map-container">
             <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509365!2d144.95592331590427!3d-37.81720967975153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d47f0f8654b%3A0xb8b37b06b9d8549e!2s123%20Bakery%20St%2C%20City%2C%20Country!5e0!3m2!1sen!2sus!4v1616729123456"
+                src="https://maps.app.goo.gl/4K5zTwZMxjJ4Gviw8"
                 width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy">
             </iframe>
         </div>

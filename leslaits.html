@@ -80,7 +80,7 @@
  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light fixed-top" id="ftco-navbar">
     <div class="container">
         <!-- Brand -->
-        <a class="navbar-brand" href="#"></a>
+        <a class="navbar-brand" ></a>
 
         <!-- Toggler Button for Mobile -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -90,7 +90,7 @@
         <!-- Collapsible Navbar Links -->
         <div class="collapse navbar-collapse" id="ftco-nav">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item active"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
                 <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
                 <li class="nav-item"><a href="#gallery" class="nav-link">Gallery</a></li>
                 <li class="nav-item"><a href="#menu" class="nav-link">Menu</a></li>
@@ -229,6 +229,15 @@
     letter-spacing: 4px;
     text-transform: uppercase;
     font-family: "Poppins", cursive;
+    /* Default styles for larger screens */
+    .slider-item {
+    height: 500px; /* Adjust for desktop */
+    background-size: cover;
+    background-position: center;
+}
+
+
+
 }
     </style>
     <!-- slider  section end  -->
@@ -244,108 +253,6 @@
 
 
 
-<!-- About Us Section Starts -->
-<section class="ftco-wrap-about" id="about">
-    <div class="intro">
-        <div class="container">
-            <div class="heading-section ftco-animate mb-5 text-center">
-                <span class="subheading">Our</span>
-                <h2 class="mb-4">Franchises</h2>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <div class="row">
-                        <div class="col-xl-4 col-md-6 col-sm-12 intro_col">
-                            <div class="intro_image position-relative">
-                                <img src="images/intro_1.jpg" alt="Cake">
-                                <div class="btn-overlay">
-                                    <a href="#cakes" class="btn btn-primary">Les Laits</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-md-6 col-sm-12 intro_col">
-                            <div class="intro_image position-relative">
-                                <img src="images/intro_2.jpg" alt="Decorations">
-                                <div class="btn-overlay">
-                                    <a href="#decorations" class="btn btn-primary">Lahza</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-md-6 col-sm-12 intro_col">
-                            <div class="intro_image position-relative">
-                                <img src="images/intro_2.jpg" alt="Decorations">
-                                <div class="btn-overlay">
-                                    <a href="#decorations" class="btn btn-primary">An Lahza Affarir</a>
-                                </div>
-                            </div>
-                        </div>  
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- CSS to style the buttons and images -->
-<style>
-    .intro_image {
-        position: relative;
-        text-align: center;
-        overflow: hidden;
-        margin-bottom: 15px; /* Added space between images */
-    }
-
-    .intro_image img {
-        width: 100%;
-        height: 250px; /* Making the image rectangular */
-        object-fit: cover;
-        border-radius: 10px;
-    }
-
-    .btn-overlay {
-        position: absolute;
-        bottom: 10px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 100%;
-        text-align: center;
-    }
-
-    .btn-overlay .btn {
-        background-color: rgb(200, 169, 126); 
-        color: white;
-        padding: 6px 20px;
-        border-radius: 5px;
-        font-weight: bold;
-        font-size: 14px;
-        text-transform: uppercase;
-        border: none;
-        transition: background-color 0.3s;
-    }
-
-    .btn-overlay .btn:hover {
-        background-color: rgb(180, 140, 100); /* Slightly darker brown */
-    }
-
-    .btn-overlay .btn:focus, 
-    .btn-overlay .btn:active {
-        background-color: rgb(200, 169, 126) !important; /* No red effect */
-        outline: none;
-        box-shadow: none;
-    }
-
-    /* Ensuring spacing and alignment on small screens */
-    @media (max-width: 768px) {
-        .intro_col {
-            padding: 0 10px; /* Adds spacing between columns */
-        }
-    }
-</style>
-
-
-
-
-
     <!-- about us section ends  -->
 
 
@@ -356,7 +263,7 @@
             <div class="row justify-content-center mb-5 pb-2">
                 <div class="col-md-7 text-center heading-section ftco-animate">
                     <span class="subheading">Specialities</span>
-                    <h2 class="mb-4">Our Menu</h2>
+                    <h2 class="mb-4">Leslaits</h2>
                 </div>
             </div>
 
@@ -373,7 +280,7 @@
                                     <h3>Strawberry</h3>
                                 </div>
                                 <div class="one-forth">
-                                    <span class="price">₹400</span>
+                                    <span class="price"></span>
                                 </div>
                             </div>
                             <p><span>Strawberry</span>, <span>Chocolate</span>, <span>Berry</span>, <span>Cream</span>
@@ -518,86 +425,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-<!-- Footer Section Starts -->
-<section class="ftco-footer ftco-bg-dark ftco-section">
-    <div class="container">
-        
-        <!-- Top Center Contact Details -->
-        <div class="row justify-content-center mb-4">
-            <div class="col-md-6 text-center">
-                <ul class="ftco-footer-social list-unstyled d-flex justify-content-center">
-                    <!-- Instagram Links -->
-                    <li class="ftco-animate mx-2">
-                        <a href="https://instagram.com/cakebakery" target="_blank">
-                            <span class="fa fa-instagram"></span>
-                        </a>
-                    </li>
-                    <li class="ftco-animate mx-2">
-                        <a href="https://instagram.com/plants" target="_blank">
-                            <span class="fa fa-instagram"></span>
-                        </a>
-                    </li>
-                    <li class="ftco-animate mx-2">
-                        <a href="https://instagram.com/decorations" target="_blank">
-                            <span class="fa fa-instagram"></span>
-                        </a>
-                    </li>
-                    <!-- Email Link -->
-                    <li class="ftco-animate mx-2">
-                        <a href="mailto:sha@gmail.com">
-                            <span class="fa fa-envelope"></span>
-                        </a>
-                    </li>
-                    <!-- Phone Link -->
-                    <li class="ftco-animate mx-2">
-                        <a href="tel:+919961884561">
-                            <span class="fa fa-phone"></span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Main Footer Content -->
-        <div class="row justify-content-center">
-            <div class="col-md-8 text-center">
-                <div class="ftco-footer-widget mb-4">
-                    <h2 class="ftco-heading-2">Les Laits</h2>
-                    <p>We serve and take all types of cake orders. Personalize your cake with unique designs and flavors of your choice.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Newsletter Subscription -->
-        <div class="row justify-content-center">
-            <div class="col-md-6">
-                <div class="ftco-footer-widget mb-4">
-                    <h2 class="ftco-heading-2 text-center">Newsletter</h2>
-                    <p class="text-center">Get our monthly cake catalog by subscribing below.</p>
-                    <form action="#" class="subscribe-form">
-                        <div class="form-group">
-                            <input type="email" name="newsletter_email" class="form-control mb-2 text-center" placeholder="Your Email" required>
-                            <input type="submit" value="Subscribe" class="form-control submit px-3">
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</section>
-<!-- Footer Section Ends -->
 
 
 
