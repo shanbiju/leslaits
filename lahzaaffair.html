@@ -91,10 +91,10 @@
                 <li class="nav-item "><a href="index.html" class="nav-link">Home</a></li>
                 <li class="nav-item"><a href="index.html#franchises" class="nav-link">Our Franchises</a></li>
                 <li class="nav-item"><a href="index.html#gallery" class="nav-link">Gallery</a></li>
-                <li class="nav-item"><a href="#about" class="nav-link">About Us</a></li>
-                <li class="nav-item active"><a href="leslaits.html" class="nav-link">Leslaits</a></li>
-                <li class="nav-item"><a href="lahza.html" class="nav-link">Lahza</a></li>
-                <li class="nav-item"><a href="lahzaaffair.html" class="nav-link">An Lahza Afair</a></li>
+                <li class="nav-item"><a href="index.html#about" class="nav-link">About Us</a></li>
+                <li class="nav-item "><a href="leslaits.html" class="nav-link">Leslaits</a></li>
+                <li class="nav-item "><a href="lahza.html" class="nav-link">Lahza</a></li>
+                <li class="nav-item active"><a href="lahzaaffair.html" class="nav-link">An Lahza Afair</a></li>
                 <li class="nav-item"><a href="index.html#testimonial" class="nav-link">Testimonials</a></li>
                 <li class="nav-item cta"><a href="#order" class="nav-link">Order Now</a></li>
             </ul>
@@ -188,7 +188,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8 ftco-animate p-4 px-md-5 pb-md-5 bg-white rounded-lg shadow-lg" style="border-radius: 20px;">
             <div class="heading-section ftco-animate mb-5 text-center">
-                <span class="subheading">Les Laits</span>
+                <span class="subheading">An Lahza Affair</span>
                 <h2 class="mb-4">                       <h2 class="mb-4"></h2></h2>
                 <br>
                 <br>
@@ -196,19 +196,19 @@
 
             <!-- About Us Content -->
             <div class="text-center">
-                <h3><strong>Dessert Catering | Artisanal Cakes | Bakes</strong></h3>
+                <h3><strong>Decor Styling | Event Planning | Decor Detailing</strong></h3>
 
-                <p class="mb-4"> 
-                    "✨ Indulge in a world of sweetness! ✨<br>
-                    🎂 Les Laits brings you artisanal cakes, bakes, and desserts, crafted with creativity and flavor to make your celebrations extra special.<br><br>
-                
-                    🍰 Our Offerings:<br>
-                    🔹 Custom Cake Designs – Perfectly tailored for your events.<br>
-                    🧁 Dessert Catering – Sweeten any occasion with our delightful treats.<br>
-                    🍪 Specialty Bakes – Crafted with precision, passion, and love.<br><br>
-                
-                    Let’s make every moment delicious! 💕✨ 
-                </p>
+<p class="mb-4"> 
+    "✨ Transform your events into unforgettable memories! ✨<br>
+    🎉 An Lahza Affair specializes in creating stunning decor, meticulous planning, and personalized touches to bring your dream celebrations to life.<br><br>
+
+    🖼️ Our Offerings:<br>
+    🔹 Personalized Event Themes – Tailored to your unique vision.<br>
+    🎨 Decor Detailing – Perfect for weddings, birthdays, and special milestones.<br>
+    🖌️ Full-Scale Event Styling & Planning – Seamless execution from concept to completion.<br><br>
+
+    Let’s create magic together! 💕✨"
+</p>
                 
             </div>
 
@@ -440,7 +440,7 @@ margin-bottom: 0rem !important;
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="orderType">Order</label>
-                                <input type="text" class="form-control" id="orderType" value="Cakes" readonly>
+                                <input type="text" class="form-control" id="orderType" value="Decorations" readonly>
                             </div>
                         </div>
 
@@ -465,18 +465,18 @@ document.getElementById("orderForm").addEventListener("submit", function(event) 
     let name = document.getElementById("name").value;
     let phone = document.getElementById("phone").value;
     let address = document.getElementById("address").value;
-    let orderType = "Cakes"; // Fixed order type
+    let orderType = "Decorations"; // Fixed order type
 
     // WhatsApp Number (Replace with Seller's WhatsApp Number)
     let sellerPhoneNumber = "9778744658"; // Replace with your WhatsApp number
 
     // Create WhatsApp message
-    let message = `Hello, I want to place an order!%0A
+    let message = `Hello, I want to enquire about placing an order!%0A
     *Name:* ${name}%0A
     *Phone:* ${phone}%0A
     *Address:* ${address}%0A
     *Order Type:* ${orderType}%0A
-    Please confirm my order.`;
+   .`;
 
     // WhatsApp URL
     let whatsappURL = `https://wa.me/${sellerPhoneNumber}?text=${message}`;
@@ -485,6 +485,7 @@ document.getElementById("orderForm").addEventListener("submit", function(event) 
     window.open(whatsappURL, "_blank");
 });
 </script>
+
 
 
 
